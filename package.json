@@ -4,12 +4,14 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "build": "parcel build src/index.html"
+    "test": "node tests/*.js",
+    "build": "npm run test && parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^1.3.5",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
